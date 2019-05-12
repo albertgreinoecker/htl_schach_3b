@@ -5,7 +5,6 @@ public class SpielFeld {
 	private boolean werAmZug;
 
 	public SpielFeld(Feld[][] mat, boolean werAmZug) {
-		super();
 		this.mat = mat;
 		this.werAmZug = werAmZug;
 	}
@@ -45,5 +44,4 @@ public class SpielFeld {
 	public Position schach2koordinate(String schach) {
 		return null;
 	}
-
 }
