@@ -4,7 +4,7 @@ public class Springer extends Figur {
 
 	public Springer(boolean farbeWeiss, boolean bewegt) {
 		super(farbeWeiss, bewegt);
-		// TODO implement
+		// TODO implement2
 	}
 
 	public boolean spielZug(SpielFeld sp, Position von, Position nach) {
