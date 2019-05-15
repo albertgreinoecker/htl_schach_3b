@@ -7,6 +7,14 @@ public class SpielFeld {
 	private Feld[][] mat = new Feld[8][8];
 	private boolean werAmZug;
 
+	public SpielFeld() {
+		
+	}
+	
+	public SpielFeld(Feld[][] mat) {
+		this(mat, true);
+	}
+	
 	public SpielFeld(Feld[][] mat, boolean werAmZug) {
 		this.mat = mat;
 		this.werAmZug = werAmZug;
