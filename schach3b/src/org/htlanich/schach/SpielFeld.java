@@ -1,6 +1,6 @@
 package org.htlanich.schach;
 
-@author torben
+@author toalba
 
 public class SpielFeld {
 	private Feld[][] mat = new Feld[8][8];
