@@ -17,6 +17,6 @@ public class Bauer extends Figur {
 	}
 	public String toString()
 	{
-		return "B" + super.toString();
+		return " B " + super.toString();
 	}
 }
