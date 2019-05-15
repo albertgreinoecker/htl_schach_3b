@@ -34,10 +34,10 @@ public class SpielFeld {
 
 	public boolean schach() {
 
-		if( )
-
-
-
+		/*if(Koenig.spielzugMoeglich = false )
+		{
+			return true;
+		} */
 		return false;
 	}
 
