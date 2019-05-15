@@ -1,13 +1,10 @@
 package org.htlanich.schach;
 
 public class Bauer extends Figur {
-	private String BW;
-	private String BS;
 	
-	public Bauer(boolean farbeWeiss, boolean bewegt, String bW, String bS) {
+	public Bauer(boolean farbeWeiss, boolean bewegt) {
 		super(farbeWeiss, bewegt);
-		BW = bW;
-		BS = bS;
+		
 	}
 
 	public boolean spielZug(SpielFeld sp, Position von, Position nach) {
