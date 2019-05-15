@@ -1,11 +1,15 @@
+Projektmanagment: Christian, David
+
 SpielFeldIO: David, Christian
+
 Springer: Fabian, Alexander
 
 Turm: Aleksandar, Tobias
 
-SpielFeld: Torben
+SpielFeld: Torben, Raphael
 
 Koenig: David, Christian
 
-Läufer: Maximilian, Raphael
-Bauer: Benjamin
+Läufer:  Torben, Raphael
+
+Bauer: Benjamin, Maximilian
