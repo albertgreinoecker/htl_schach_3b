@@ -1,7 +1,8 @@
 package org.htlanich.schach;
 
+/*
 @author toalba
-
+*/
 public class SpielFeld {
 	private Feld[][] mat = new Feld[8][8];
 	private boolean werAmZug;
@@ -32,6 +33,11 @@ public class SpielFeld {
 	}
 
 	public boolean schach() {
+
+		if( )
+
+
+
 		return false;
 	}
 
