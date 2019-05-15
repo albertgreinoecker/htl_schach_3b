@@ -6,7 +6,7 @@ public class Spielfeldio {
 	
 	
 	
-	kdjsbfahsdf
+	kdjsbfa
 	
 
 	public static void main(String[] args) {
