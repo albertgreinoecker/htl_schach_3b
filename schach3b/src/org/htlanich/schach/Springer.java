@@ -1,8 +1,10 @@
 package org.htlanich.schach;
 
-public class Springer extends Figur {
+public class Springer extends Figur 
+{
 
-	public Springer(boolean farbeWeiss, boolean bewegt) {
+	public Springer(boolean farbeWeiss, boolean bewegt) 
+	{
 		super(farbeWeiss, bewegt);
 		// TODO implement
 	}
@@ -15,5 +17,11 @@ public class Springer extends Figur {
 	public boolean spielzugMoeglich(SpielFeld sp, Position von, Position nach) {
 		// TODO implement
 		return false;
+	}
+	
+	@Override
+	public String toString()
+	{
+		return "S" + super.toString();
 	}
 }
