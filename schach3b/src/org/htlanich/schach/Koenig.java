@@ -16,4 +16,9 @@ public class Koenig extends Figur {
 		// TODO implement
 		return false;
 	}
+
+	@Override
+	public String toString() {
+		return "K" + super.toString();
+	}
 }
