@@ -2,15 +2,15 @@ package org.htlanich.schach;
 
 public class Spielfeldio {
 	
-	
-	
-	
-	
-	kdjsbfa
-	
+	public static SpielFeld einlesen(String fName)
+	{
+		SpielFeld f = new SpielFeld();
+		//TODO implement
+		return f;
+	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 
 	}
 
