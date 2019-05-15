@@ -16,4 +16,10 @@ public class Laeufer extends Figur {
 		// TODO implement
 		return false;
 	}
+	
+	@Override
+	public String toString()
+	{
+		return "L" + super.toString();
+	}
 }
