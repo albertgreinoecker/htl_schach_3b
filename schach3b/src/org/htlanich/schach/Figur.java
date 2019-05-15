@@ -39,6 +39,6 @@ public class Figur extends Feld {
 	public String toString() {
 		if (farbeWeiss) 
 			return "W"; 
-		else return "S";
+		else return "B";
 	}
 }
