@@ -1,5 +1,7 @@
 package org.htlanich.schach;
 
+@author torben
+
 public class SpielFeld {
 	private Feld[][] mat = new Feld[8][8];
 	private boolean werAmZug;
