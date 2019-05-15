@@ -1,6 +1,6 @@
 Projektmanagment: Christian, David
 
-SpielFeldIO: David, Christian
+SpielFeldIO: Albert Greinöcker
 
 Springer: Fabian, Alexander
 
@@ -13,3 +13,5 @@ Koenig: David, Christian
 LÃ¤ufer:  Torben, Raphael
 
 Bauer: Benjamin, Maximilian
+
+GUIfx: David, Christian
