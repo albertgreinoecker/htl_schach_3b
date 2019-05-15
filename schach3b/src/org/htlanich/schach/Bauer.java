@@ -1,7 +1,6 @@
 package org.htlanich.schach;
 
 public class Bauer extends Figur {
-	
 	public Bauer(boolean farbeWeiss, boolean bewegt) {
 		super(farbeWeiss, bewegt);
 		
