@@ -1,6 +1,6 @@
 package org.htlanich.schach;
 
-/*
+/**
 @author toalba
 */
 public class SpielFeld {
