@@ -39,5 +39,4 @@ class BauerTest {
 		Assert.assertFalse(ok1);
 	}
 	
-	
 }
