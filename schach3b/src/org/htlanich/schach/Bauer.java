@@ -1,10 +1,13 @@
 package org.htlanich.schach;
 
 public class Bauer extends Figur {
+	public Bauer(boolean farbeWeiss) {
+		super(farbeWeiss, false);
+	}
 	public Bauer(boolean farbeWeiss, boolean bewegt) {
 		super(farbeWeiss, bewegt);
+		// TODO implement
 	}
-
 	
 	
 	public boolean spielZug(SpielFeld sp, Position von, Position nach) {
