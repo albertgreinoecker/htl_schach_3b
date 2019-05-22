@@ -20,7 +20,7 @@ class BauerTest {
 
 	@BeforeEach
 	void setUp() throws Exception {
-		f1 = Spielfeldio.einlesen("testfelder/S1.txt");
+		f1 = Spielfeldio.einlesen("testfelder/B1.txt");
 	}
 
 	@AfterEach
