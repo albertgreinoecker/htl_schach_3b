@@ -3,6 +3,11 @@ package org.htlanich.schach;
 public class Springer extends Figur 
 {
 
+	public Springer(boolean farbeWeiss)
+	{
+		super(farbeWeiss, false);
+	}
+	
 	public Springer(boolean farbeWeiss, boolean bewegt) 
 	{
 		super(farbeWeiss, bewegt);
