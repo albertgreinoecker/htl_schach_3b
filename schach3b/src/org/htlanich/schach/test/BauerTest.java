@@ -37,6 +37,5 @@ class BauerTest {
 		Bauer b1 = (Bauer)f1.getFeld(1,0);
 		boolean ok1 = b1.spielzugMoeglich(f1, new Position(1,0), new Position(1,1));
 		Assert.assertFalse(ok1);
-	}
-	
+	}	
 }
