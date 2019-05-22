@@ -28,7 +28,7 @@ public class SpielfeldGUIfx extends Application implements EventHandler <MouseEv
         }
         
         feld.setOnAction( event -> {
-        	feld.setBackground(Color.RED);
+        	
         });
         
         Scene scene = new Scene(Spielfeld);
