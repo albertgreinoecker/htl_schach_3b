@@ -20,12 +20,12 @@ public class Spielfeldio {
 		
 		switch(typ)
 		{
-			case 'T' : return new Turm(farbeW, false);
-			case 'S' : return new Springer(farbeW, false);
-			case 'L' : return new Laeufer(farbeW, false);
-			case 'K' : return new Koenig(farbeW, false);
-			case 'D' : return new Dame(farbeW, false);
-			case 'B' : return new Bauer(farbeW, false);
+			case 'T' : return new Turm(farbeW);
+			case 'S' : return new Springer(farbeW);
+			case 'L' : return new Laeufer(farbeW);
+			case 'K' : return new Koenig(farbeW);
+			case 'D' : return new Dame(farbeW);
+			case 'B' : return new Bauer(farbeW);
 			default: return new Feld();
 		}
 	}
