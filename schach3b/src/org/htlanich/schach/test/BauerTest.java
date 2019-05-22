@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 import org.htlanich.schach.Position;
 import org.htlanich.schach.SpielFeld;
 import org.htlanich.schach.Spielfeldio;
-import org.htlanich.schach.Springer;
+import org.htlanich.schach.Bauer;
 import org.junit.Assert;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -30,6 +30,13 @@ class BauerTest {
 	@Test
 	void test() {
 		fail("Not yet implemented");
+	}
+	
+	@Test
+	void testStartpositionNichtOk1() {
+		Bauer b1 = (Bauer)f1.getFeld(0, 1);
+		boolean ok1 = b1.spielzugMoeglich(f1, new Position(0,1), new Position(0,2));
+		Assert.assertFalse(ok1);
 	}
 
 }
