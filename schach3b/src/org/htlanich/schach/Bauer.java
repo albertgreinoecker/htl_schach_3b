@@ -5,6 +5,8 @@ public class Bauer extends Figur {
 		super(farbeWeiss, bewegt);
 	}
 
+	
+	
 	public boolean spielZug(SpielFeld sp, Position von, Position nach) {
 		// TODO: implement
 		return false;
