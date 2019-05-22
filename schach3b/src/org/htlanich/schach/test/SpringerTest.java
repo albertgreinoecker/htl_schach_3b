@@ -21,18 +21,21 @@ class SpringerTest {
 	}
 
 	@AfterEach
-	void tearDown() throws Exception {
+	void tearDown() throws Exception 
+	{
 	}
 
 	@Test
-	void testStartpositionNichtOk1() {
+	void testStartpositionNichtOk1() 
+	{
 		Springer s1 = (Springer)f1.getFeld(0, 1);
 		boolean nichtOk1 = s1.spielzugMoeglich(f1, new Position(0,1), new Position(0,2));
 		Assert.assertFalse(nichtOk1);
 	}
 	
 	@Test
-	void testStartpositionNichtOk2() {
+	void testStartpositionNichtOk2() 
+	{
 		Springer s1 = (Springer)f2.getFeld(4, 5);
 		boolean nichtOk2 = s1.spielzugMoeglich(f2, new Position(4,5), new Position(2,4));
 		Assert.assertFalse(nichtOk2);
