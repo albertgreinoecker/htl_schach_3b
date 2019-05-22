@@ -25,11 +25,9 @@ public class SpielfeldGUIfx extends Application implements EventHandler <MouseEv
         		feld.setMaxSize(60,60);
         		feld.setStyle("-fx-background-color: White");
         		
-        		feld.setOnAction( event -> {
-        	
-        		feld.setStyle("-fx-background-color: Red");
-        		boolean pressed = true;
         		
+        		feld.setOnAction( event -> {
+        		feld.setStyle("-fx-background-color: Red");
         		});
         		Spielfeld.add(feld, x, y);
         	}
