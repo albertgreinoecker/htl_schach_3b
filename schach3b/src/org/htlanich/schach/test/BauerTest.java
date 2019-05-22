@@ -38,4 +38,5 @@ class BauerTest {
 		boolean ok1 = b1.spielzugMoeglich(f1, new Position(0,1), new Position(0,2));
 		Assert.assertFalse(ok1);
 	}
+	
 }
