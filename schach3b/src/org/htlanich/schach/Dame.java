@@ -2,6 +2,10 @@ package org.htlanich.schach;
 
 public class Dame extends Figur {
 
+	public Dame(boolean farbeWeiss) {
+		super(farbeWeiss, false);
+	}
+	
 	public Dame(boolean farbeWeiss, boolean bewegt) {
 		super(farbeWeiss, bewegt);
 		// TODO implement
