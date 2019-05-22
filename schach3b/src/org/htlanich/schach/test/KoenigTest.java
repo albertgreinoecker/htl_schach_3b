@@ -64,5 +64,13 @@ class KoenigTest {
 		Assert.assertTrue(ok5);
 		
 	}
+	
+	@Test
+	void testnichtOk1() {
+		Koenig k1 = (Koenig)f1.getFeld(5, 0);
+		boolean ok5 = k1.spielzugMoeglich(f1, new Position (5,0), new Position(6,0));
+		Assert.assertTrue(ok5);
+		
+	}
 
 }
