@@ -12,22 +12,35 @@ import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 public class SpielfeldGUIfx extends Application implements EventHandler <MouseEvent>{
-	
+	boolean pressed = false;
 	@Override
 	public void start(Stage primaryStage) {
-        GridPane Spielfeld = new GridPane();
-        for(int x = 0; x < 9;x++)
+		GridPane Spielfeld = new GridPane();
+		Spielfeld.getStylesheets().add(getClass().getResource("feldstyle.css").toExternalForm());
+        
+		
+		for(int x = 0; x < 9;x++)
         {
         	for(int y = 0; y < 9; y++)
         	{
         		Button feld = new Button();
         		feld.setPrefSize(60,60);
         		feld.setMaxSize(60,60);
-        		feld.setStyle("-fx-background-color: White");
-        		
+        		feld.getStyleClass().add("standartFeld");
+        	       		
         		
         		feld.setOnAction( event -> {
-        		feld.setStyle("-fx-background-color: Red");
+        		if(pressed == true)
+        		{
+        			feld.getStyleClass().removeAll("standaerFeld");
+               		feld.getStyleClass().add("ausgeweahltesFeld");
+        			pressed = false;
+        		}else
+        		{
+        			feld.getStyleClass().removeAll("ausgeweahltesFeld");
+               		feld.getStyleClass().add("standartFeld");
+               		pressed = true;
+        		}
         		});
         		Spielfeld.add(feld, x, y);
         	}

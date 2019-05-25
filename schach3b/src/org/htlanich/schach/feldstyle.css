@@ -1,0 +1,13 @@
+.standartFeld{
+	-fx-background-color : white;
+	 	-fx-border-style : solid; 
+	
+}
+
+.ausgeweahltesFeld{
+	-fx-background-color: red;
+	
+	
+	 	-fx-border-style: solid;
+	 
+}
