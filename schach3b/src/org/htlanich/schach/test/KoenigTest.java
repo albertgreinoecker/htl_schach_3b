@@ -1,7 +1,5 @@
 package org.htlanich.schach.test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 import org.htlanich.schach.Koenig;
 import org.htlanich.schach.Position;
 import org.htlanich.schach.SpielFeld;
@@ -59,14 +57,6 @@ class KoenigTest {
 	
 	@Test
 	void testOk5() {
-		Koenig k1 = (Koenig)f1.getFeld(5, 0);
-		boolean ok5 = k1.spielzugMoeglich(f1, new Position (5,0), new Position(6,0));
-		Assert.assertTrue(ok5);
-		
-	}
-	
-	@Test
-	void testnichtOk1() {
 		Koenig k1 = (Koenig)f1.getFeld(5, 0);
 		boolean ok5 = k1.spielzugMoeglich(f1, new Position (5,0), new Position(6,0));
 		Assert.assertTrue(ok5);
