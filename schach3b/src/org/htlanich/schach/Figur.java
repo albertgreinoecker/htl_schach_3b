@@ -31,8 +31,8 @@ public class Figur extends Feld {
 	}
 
 	public boolean spielzugMoeglich(SpielFeld sp, Position von, Position nach) {
-		// TODO: implement
-		return false;
+		
+		return !von.equals(nach);
 	}
 	
 	@Override
