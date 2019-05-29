@@ -70,7 +70,7 @@ public class SpielFeld {
 		return false;
 	}
 
-	public Position schach2koordinate(String schach) {
+	public static Position schach2koordinate(String schach) {
 		return null;
 	}
 	
