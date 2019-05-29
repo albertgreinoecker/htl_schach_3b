@@ -18,8 +18,10 @@ public class Koenig extends Figur {
 	}
 
 	public boolean spielzugMoeglich(SpielFeld sp, Position von, Position nach) {
-		// TODO implement
-		return false;
+		int dx = Math.abs(nach.x-von.x);
+		int dy = Math.abs(nach.y-von.y);
+		
+		return super.spielzugMoeglich(sp, von, nach) && ((dx<=1)&&(dy<=1));
 	}
 
 	@Override
