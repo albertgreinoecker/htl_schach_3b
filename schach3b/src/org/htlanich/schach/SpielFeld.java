@@ -61,6 +61,11 @@ public class SpielFeld {
 		return false;
 	}
 
+	public boolean spielZug(Position von, Position nach)
+	{
+		return false;
+	}
+	
 	public boolean spielzug(String zug) {
 		return false;
 	}
