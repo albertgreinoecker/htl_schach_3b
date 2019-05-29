@@ -31,24 +31,25 @@ class BauerTest {
 	void test() {
 		fail("Not yet implemented");
 	}
-	
+
 	@Test
 	void testStartpositionNichtOk1() {
-		Bauer b1 = (Bauer)f1.getFeld(2,0);
-		boolean ok1 = b1.spielzugMoeglich(f1, new Position(2,0), new Position(2,1));
+		Bauer b1 = (Bauer) f1.getFeld(2, 0);
+		boolean ok1 = b1.spielzugMoeglich(f1, new Position(2, 0), new Position(2, 1));
 		Assert.assertFalse(ok1);
-	}	
-	
+	}
+
 	@Test
 	void testStartpositionOk1() {
-		Bauer b1 = (Bauer)f1.getFeld(2,0);
-		boolean ok2 = b1.spielzugMoeglich(f1, new Position(5,0), new Position(6,0));
+		Bauer b1 = (Bauer) f1.getFeld(2, 0);
+		boolean ok2 = b1.spielzugMoeglich(f1, new Position(5, 0), new Position(6, 0));
 		Assert.assertTrue(ok2);
-	}	
+	}
+
 	@Test
 	void testStartpositionOk2() {
-		Bauer b1 = (Bauer)f1.getFeld(2,0);
-		boolean ok3 = b1.spielzugMoeglich(f1, new Position(2,0), new Position(4,0));
+		Bauer b1 = (Bauer) f1.getFeld(2, 0);
+		boolean ok3 = b1.spielzugMoeglich(f1, new Position(2, 0), new Position(4, 0));
 		Assert.assertTrue(ok3);
-	}	
+	}
 }
