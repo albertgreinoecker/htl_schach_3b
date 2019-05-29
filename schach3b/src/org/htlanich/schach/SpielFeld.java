@@ -4,6 +4,7 @@ package org.htlanich.schach;
 @author toalba
 */
 public class SpielFeld {
+	// 0,0 ist links oben
 	private Feld[][] mat = new Feld[8][8];
 	private boolean werAmZug;
 
