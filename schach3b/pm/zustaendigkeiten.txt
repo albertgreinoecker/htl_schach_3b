@@ -1,12 +1,12 @@
 Projektmanagment: Christian, David
 
-SpielFeldIO: Albert Greinöcker
+SpielFeldIO: Albert 
 
 Springer: Fabian, Alexander
 
 Turm: Aleksandar, Tobias
 
-SpielFeld: Torben, Raphael
+SpielFeld: Albert
 
 Koenig: David, Christian
 
