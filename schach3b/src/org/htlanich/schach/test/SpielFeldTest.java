@@ -22,5 +22,10 @@ class SpielFeldTest {
 	void testAusgabeStart() {
 		start.ausgabe();
 	}
+	
+	@Test
+	void testSchach2Koordinate() {
+		SpielFeld.schach2koordinate("E2");
+	}
 
 }
