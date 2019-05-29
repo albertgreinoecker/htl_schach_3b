@@ -13,11 +13,13 @@ import org.junit.jupiter.api.Test;
 class SpringerTest {
 	SpielFeld f1 = null;
 	SpielFeld f2 = null;
+	SpielFeld f3 = null;
 	
 	@BeforeEach
 	void setUp() throws Exception {
 		f1 = Spielfeldio.einlesen("testfelder/S1.txt");
 		f2 = Spielfeldio.einlesen("testfelder/S2_waehrendSpiel.txt");
+		f3 = Spielfeldio.einlesen("testfeld/S3_Schlagen.txt");
 	}
 
 	@AfterEach
@@ -53,5 +55,12 @@ class SpringerTest {
 		Springer s1 = (Springer)f2.getFeld(4, 5);
 		boolean ok2 = s1.spielzugMoeglich(f2, new Position(4,5), new Position(2,6));
 		Assert.assertTrue(ok2);
+	}
+	
+	@Test
+	void testStartpositionOk3() {
+		Springer s1 = (Springer)f3.getFeld(4, 5);
+		boolean ok3 = s1.spielzugMoeglich(f3, new Position(4,5), new Position(2,6));
+		Assert.assertTrue(ok3);
 	}
 }

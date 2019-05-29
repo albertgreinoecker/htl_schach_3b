@@ -34,9 +34,8 @@ class BauerTest {
 	
 	@Test
 	void testStartpositionNichtOk1() {
-		Bauer b1 = (Bauer)f1.getFeld(0, 1);
-		boolean ok1 = b1.spielzugMoeglich(f1, new Position(0,1), new Position(0,2));
+		Bauer b1 = (Bauer)f1.getFeld(1,0);
+		boolean ok1 = b1.spielzugMoeglich(f1, new Position(1,0), new Position(1,1));
 		Assert.assertFalse(ok1);
-	}
-	
+	}	
 }

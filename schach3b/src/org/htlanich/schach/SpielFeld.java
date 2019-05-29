@@ -4,6 +4,7 @@ package org.htlanich.schach;
 @author toalba
 */
 public class SpielFeld {
+	// 0,0 ist links oben
 	private Feld[][] mat = new Feld[8][8];
 	private boolean werAmZug;
 
@@ -60,11 +61,16 @@ public class SpielFeld {
 		return false;
 	}
 
+	public boolean spielZug(Position von, Position nach)
+	{
+		return false;
+	}
+	
 	public boolean spielzug(String zug) {
 		return false;
 	}
 
-	public Position schach2koordinate(String schach) {
+	public static Position schach2koordinate(String schach) {
 		return null;
 	}
 	
