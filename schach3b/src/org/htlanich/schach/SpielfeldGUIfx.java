@@ -23,16 +23,19 @@ public class SpielfeldGUIfx extends Application implements EventHandler <MouseEv
 		Spielfeld.getStylesheets().add(getClass().getResource("feldstyle.css").toExternalForm());
         SpielFeld sf = Spielfeldio.einlesen("start.txt");
 		
-		for(int x = 0; x < 8;x++)
+		for(int y = 0; y < 8;y++)
         {
-        	for(int y = 0; y < 8; y++)
+        	for(int x = 0; x < 8; x++)
         	{
-        		String datName = sf.getFeld(x, y) + ".png.png";
-        		Image fig = new Image(getClass().getResourceAsStream("Bilder/"+ datName));
+        		String datName = sf.getFeld(y, x) + ".png";
+        		System.out.println(datName);
+        		
+        		Image fig = new Image("file:src/Bilder/"+datName);	//TODO subject to change
+        		
         		Button feld = new Button();
         		feld.setGraphic(new ImageView(fig));
-        		feld.setPrefSize(60,60);
-        		feld.setMaxSize(60,60);
+        		feld.setPrefSize(10,10);
+        		feld.setMaxSize(10,10);
         		feld.getStyleClass().add("standartFeld");
         		        		
         		
@@ -66,6 +69,11 @@ public class SpielfeldGUIfx extends Application implements EventHandler <MouseEv
 
 	}
 	
+	private void scale(Image fig, int i) {
+		// TODO Auto-generated method stub
+		
+	}
+
 	public static void main(String[] args) {
 		launch(args);
 	}
