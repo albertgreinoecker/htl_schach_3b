@@ -17,7 +17,7 @@ public class Dame extends Figur {
 	}
 
 	public boolean spielzugMoeglich(SpielFeld sp, Position von, Position nach) {
-		// TODO: implement
+		// TODO: implemen
 		return false;
 	}
 	
