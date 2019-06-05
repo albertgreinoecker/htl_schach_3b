@@ -78,4 +78,9 @@ public class SpielFeld {
 	{
 		return mat[x][y];
 	}
+	
+	public boolean isFigur(int x, int y)
+	{
+		return getFeld(x, y) instanceof Figur;
+	}
 }
