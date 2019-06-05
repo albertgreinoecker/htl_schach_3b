@@ -21,7 +21,7 @@ public class Springer extends Figur
 
 	public boolean spielzugMoeglich(SpielFeld sp, Position von, Position nach) {
 		int dx = Math.abs(von.x -nach.x);
-		int dy = Math.abs(von-y -nach.y);
+		int dy = Math.abs(von.y -nach.y);
 		return(dx == 2 && dy == 1) || (dx == 1 && dy == 2);
 	}
 	 
