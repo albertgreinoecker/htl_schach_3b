@@ -30,6 +30,7 @@ public class Bauer extends Figur {
 		return(super.isBewegt() && (dy==1));
 		}else if( dx==1)
 		{
+		
 			
 		}else
 		{
