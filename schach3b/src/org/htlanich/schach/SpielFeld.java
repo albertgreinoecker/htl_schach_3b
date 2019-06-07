@@ -1,5 +1,7 @@
 package org.htlanich.schach;
 
+import java.util.List;
+
 /**
 @author toalba
 */
