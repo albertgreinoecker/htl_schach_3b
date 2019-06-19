@@ -1,5 +1,8 @@
 package org.htlanich.schach;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
 @author toalba
 */
@@ -48,15 +51,52 @@ public class SpielFeld {
 		}
 	}
 
+	
+	private List<Position> getFiguren(boolean weiss)
+	{
+		ArrayList<Position> figs = new ArrayList<Position>();
+		for (int i = 0; i < mat.length;i++)
+		{
+			for (int j = 0; j < mat[0].length;j++)
+			{
+				if (getFeld(i, j) instanceof Figur)
+				{
+					figs.add(new Position(i, j));
+				}
+			}
+		}
+		return null;
+	}
+	
+	private Position getKoenig(boolean weiss)
+	{
+		for (int i = 0; i < mat.length;i++)
+		{
+			for (int j = 0; j < mat[0].length;j++)
+			{
+				if (getFeld(i, j) instanceof Koenig)
+				{
+					Koenig k = (Koenig)getFeld(i, j);
+					if (k.isFarbeWeiss() == weiss)
+					{
+						return new Position(i, j);
+					}
+				}
+			}
+		}
+		return null;
+	}
+	
 	public boolean schach() {
 
-		/*if(Koenig.spielzugMoeglich = false )
-		{
-			return true;
-		} */
 		return false;
 	}
-
+	
+	private boolean schach(boolean weiss) 
+	{
+		
+	}
+	
 	public boolean schachMatt() {
 		return false;
 	}

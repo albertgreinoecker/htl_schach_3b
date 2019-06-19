@@ -31,7 +31,12 @@ public class Figur extends Feld {
 	}
 
 	public boolean spielzugMoeglich(SpielFeld sp, Position von, Position nach) {
-		
+		Feld nachFeld = sp.getFeld(nach.x, nach.x);
+		if (nachFeld instanceof Figur)
+		{
+			Figur f = (Figur)nachFeld;
+			return !von.equals(nach) && f.farbeWeiss != farbeWeiss;
+		}
 		return !von.equals(nach);
 	}
 	

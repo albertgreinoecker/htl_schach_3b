@@ -20,4 +20,9 @@ public class Dame extends Figur {
 		// TODO: implement
 		return false;
 	}
+	
+	@Override
+	public String toString() {
+		return "D" + super.toString();
+	}
 }
