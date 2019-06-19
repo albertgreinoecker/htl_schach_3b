@@ -20,13 +20,13 @@ public class Bauer extends Figur {
 		int dx= Math.abs(von.x - nach.x);
 		int dy= Math.abs(von.y - nach.y);
 		
-		if  (von.x == nach.x) {
+		if  (von.y == nach.y) {
 			if(!super.isBewegt()) 
 			{
-				return(dy == 2);	
+				return(dx == 2);	
 			}else 
 			{
-				return (dy == 1);
+				return (dx == 1);
 			}
 	
 			
