@@ -1,7 +1,5 @@
 package org.htlanich.schach;
 
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
-
 public class Bauer extends Figur {
 	public Bauer(boolean farbeWeiss) {
 		super(farbeWeiss, false);
@@ -25,16 +23,22 @@ public class Bauer extends Figur {
 		if  (von.x == nach.x) {
 			if(!super.isBewegt()) 
 			{
-				return(dx == 2);	
+				return(dy == 2);	
 			}else 
 			{
-				return ( dx == 1);
+				return (dy == 1);
 			}
 				
-		}/*else if ((dx == 1) && (dy == 1) && (sp.getFeld(dx, dy))) 		
+		}else if ((dx == 1) && (dy == 1)) 		
 		{
-			
-		} */
+			Feld f = sp.getFeld(dx, dy);
+			if (f instanceof Figur)
+			{
+				Figur fi = (Figur)f;
+				fi.isFarbeWeiss();
+				
+			}
+		} 
 			return false;	
 	}
 //		if( von.x == nach.x)
