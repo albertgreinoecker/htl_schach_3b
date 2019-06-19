@@ -14,11 +14,6 @@ public class Springer extends Figur
 		// TODO implement
 	}
 
-	public boolean spielZug(SpielFeld sp, Position von, Position nach) {
-		// TODO implement
-		return false;
-	}
-
 	public boolean spielzugMoeglich(SpielFeld sp, Position von, Position nach) {
 		int dx = Math.abs(von.x -nach.x);
 		int dy = Math.abs(von.y -nach.y);
