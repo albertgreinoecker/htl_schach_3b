@@ -124,6 +124,10 @@ public class SpielFeld extends Figur {
 		return mat[x][y];
 	}
 	
+	public void setFeld(int x, int y, Feld f)
+	{
+		mat[x][y] = f;
+	}
 	public boolean isFigur(int x, int y)
 	{
 		return getFeld(x, y) instanceof Figur;
