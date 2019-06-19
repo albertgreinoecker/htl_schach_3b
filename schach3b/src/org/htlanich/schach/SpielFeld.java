@@ -6,7 +6,7 @@ import java.util.List;
 /**
 @author toalba
 */
-public class SpielFeld {
+public class SpielFeld extends Figur {
 	// 0,0 ist links oben
 	private Feld[][] mat = new Feld[8][8];
 	private boolean werAmZug;
@@ -51,10 +51,10 @@ public class SpielFeld {
 		}
 	}
 
-	
+	ArrayList<Position> figs = new ArrayList<Position>();
 	private List<Position> getFiguren(boolean weiss)
 	{
-		ArrayList<Position> figs = new ArrayList<Position>();
+		
 		for (int i = 0; i < mat.length;i++)
 		{
 			for (int j = 0; j < mat[0].length;j++)
@@ -76,7 +76,7 @@ public class SpielFeld {
 			{
 				if (getFeld(i, j) instanceof Koenig)
 				{
-					Koenig k = (Koenig)getFeld(i, j);
+					Koenig k = (Koenig) getFeld(i, j);
 					if (k.isFarbeWeiss() == weiss)
 					{
 						return new Position(i, j);
@@ -94,7 +94,12 @@ public class SpielFeld {
 	
 	private boolean schach(boolean weiss) 
 	{
-		
+		for(int i = 0; i < figs.size(); i++)
+		{
+			Position X = figs.get(i); 
+			Position nachY = figs.get(i++);
+			spielzugMoeglich(getFigur, x, nachX);
+		}
 	}
 	
 	public boolean schachMatt() {
