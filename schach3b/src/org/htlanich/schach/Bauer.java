@@ -38,7 +38,7 @@ public class Bauer extends Figur {
 				Figur fi = (Figur)f;
 				return (isFarbeWeiss() == fi.isFarbeWeiss());
 			}
-		}else
+		}
 		return false;	
 	}
 //		if( von.x == nach.x)
