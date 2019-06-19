@@ -32,6 +32,7 @@ public class Bauer extends Figur {
 			}
 				
 		}else if (dx == 1) 
+		
 		{
 			
 		} 
