@@ -25,17 +25,16 @@ public class Bauer extends Figur {
 		if  (von.x == nach.x) {
 			if(!super.isBewegt()) 
 			{
-				return(dy == 2);	
+				return(dx == 2);	
 			}else 
 			{
-				return ( dy == 1);
+				return ( dx == 1);
 			}
 				
-		}else if (dx == 1) 
-		
+		}/*else if ((dx == 1) && (dy == 1) && (sp.getFeld(dx, dy))) 		
 		{
 			
-		} 
+		} */
 			return false;	
 	}
 //		if( von.x == nach.x)
