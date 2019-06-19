@@ -31,12 +31,11 @@ public class Bauer extends Figur {
 				
 		}else if ((dx == 1) && (dy == 1)) 		
 		{
-			Feld f = sp.getFeld(dx, dy);
+			Feld f = sp.getFeld(nach.x, nach.y);
 			if (f instanceof Figur)
 			{
 				Figur fi = (Figur)f;
-				fi.isFarbeWeiss();
-				
+				return (isFarbeWeiss() == fi.isFarbeWeiss());
 			}
 		} 
 			return false;	
