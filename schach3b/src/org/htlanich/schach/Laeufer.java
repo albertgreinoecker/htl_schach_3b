@@ -70,7 +70,7 @@ public class Laeufer extends Figur
 		
 		
 		
-		//linksoben nach rechtsunten
+		//linksoben  nach rechtsunten
 		else if(von.x<nach.x && von.y<nach.y)
 		{
 			for(int i = 1 ; i<dy-1 ; i++)
