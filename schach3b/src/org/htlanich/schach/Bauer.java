@@ -28,7 +28,8 @@ public class Bauer extends Figur {
 			{
 				return (dy == 1);
 			}
-				
+	
+			
 		}else if ((dx == 1) && (dy == 1)) 		
 		{
 			Feld f = sp.getFeld(nach.x, nach.y);
