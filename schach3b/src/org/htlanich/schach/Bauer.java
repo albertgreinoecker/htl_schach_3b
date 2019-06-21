@@ -1,20 +1,25 @@
 package org.htlanich.schach;
 
-public class Bauer extends Figur {
-	public Bauer(boolean farbeWeiss) {
+public class Bauer extends Figur 
+{
+	public Bauer(boolean farbeWeiss) 
+	{
 		super(farbeWeiss, false);
 	}
 	
-	public Bauer(boolean farbeWeiss, boolean bewegt) {
+	public Bauer(boolean farbeWeiss, boolean bewegt) 
+	{
 		super(farbeWeiss, bewegt);
 		// TODO implement
 	}
 	
-	public boolean spielzugMoeglich(SpielFeld sp, Position von, Position nach) {
+	public boolean spielzugMoeglich(SpielFeld sp, Position von, Position nach) 
+	{
 		int dx= Math.abs(von.x - nach.x);
 		int dy= Math.abs(von.y - nach.y);
-		
-		if  (von.y == nach.y) {
+			
+		if  (von.y == nach.y) 
+		{
 			if(!super.isBewegt()) 
 			{
 				return(dx == 2);	
