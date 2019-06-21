@@ -36,22 +36,7 @@ public class Bauer extends Figur {
 		}
 		return false;	
 	}
-//		if( von.x == nach.x)
-//		{
-//		return(!super.isBewegt() && ((dy== 2)));
-//		}else if( von.x == nach.x)
-//		{
-//		return(super.isBewegt() && (dy==1));
-//		}else if( dx==1)
-//		{
-//		
-//			
-//		}else
-//		{
-//			return false;
-//		}
-//		return false;
-//	}
+
 	public String toString()
 	{
 		return "B" + super.toString();
